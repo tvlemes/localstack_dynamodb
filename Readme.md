@@ -9,7 +9,7 @@
 
 # 🚀 Aprendendo LocalStack - Dynamodb
 
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/thiagovilarinholemes/LocalStack-com-DynamoDB/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/tvlemes/localstack_dynamodb/blob/main/LICENSE)
 ![Dynamodb](https://img.shields.io/badge/AWS-Dynamodb-blue?logo=amazons3)
 ![LocalStack](https://img.shields.io/badge/LocalStack-Running-green?logo=docker)
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
