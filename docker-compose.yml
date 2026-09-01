@@ -1,0 +1,44 @@
+# Define os serviços que serão executados pelo Docker Compose.
+services:
+
+  # Nome do nosso serviço.
+  localstack:
+
+    # Imagem oficial do LocalStack.
+    image: localstack/localstack:latest
+
+    # Nome que o container receberá.
+    container_name: localstack
+
+    # Mapeia a porta do LocalStack.
+    ports:
+      - "4566:4566"
+
+    # Variáveis de ambiente.
+    environment:
+
+      # Indica quais serviços queremos utilizar.
+      # Neste projeto utilizaremos apenas o DynamoDB.
+      - SERVICES=dynamodb
+
+      # Define o nível de log.
+      - DEBUG=1
+
+      # Define o nome padrão da região AWS.
+      - AWS_DEFAULT_REGION=us-east-1
+
+      # Diretório interno utilizado pelo LocalStack
+      # para armazenar dados persistentes.
+      - PERSISTENCE=1
+
+      # Define o token de autenticação do LocalStack.
+      - LOCALSTACK_AUTH_TOKEN=ls-FAtuneQI-Bica-Poru-4263-8388KOfO2f2a
+
+    # Monta um diretório local dentro do container.
+    volumes:
+
+      # Permite que o LocalStack mantenha os dados.
+      - "./.localstack:/var/lib/localstack"
+
+      # Permite que o Docker socket seja utilizado.
+      - "/var/run/docker.sock:/var/run/docker.sock"
