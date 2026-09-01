@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="./docs/aws.jpg" alt="LocalStack" height="80"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="./docs/db.webp" alt="AWS" height="80"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="./docs/docker.png" alt="AWS" height="80"/>
+  &nbsp;&nbsp;&nbsp;
+</p>
+
 # 🚀 Aprendendo LocalStack - Dynamodb
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/thiagovilarinholemes/LocalStack-com-DynamoDB/blob/main/LICENSE)
